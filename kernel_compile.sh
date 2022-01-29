@@ -4,11 +4,11 @@ set -e
 
 export COMPILER=EVA-GCC
 
-git clone --depth=1 $repo1 -b 4.9-R msm8953 && cd msm8953
+git clone --depth=1 https://github.com/ganomin/android_kernel_xiaomi_juice  && cd android_kernel_xiaomi_juice
 
 export BUILD_START=$(date +"%s")
 export ARCH=arm64
-make O=out sakura_defconfig
+make O=out gki_defconfig
 
 eva_gcc() {
   # docker has gcc repos cloned to gcc directory.
