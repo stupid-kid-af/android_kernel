@@ -3,8 +3,8 @@ task:
   timeout_in: 60m
   container:
     image: geopd/builder:drone
-    cpu: 8
-    memory: 32G
+    cpu: 4
+    memory: 16G
   environment:
     CIRRUS_WORKING_DIR: "/tmp/ci"
     repo1: "ENCRYPTED[1f648a8885574b707824e80158af6138be9f121cbb99c48907f77315b623f5c71b4e2b5e1f6f9f5dad4c6f92fb11021a]"
