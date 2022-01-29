@@ -1,0 +1,15 @@
+task:
+  name: kernel
+  timeout_in: 60m
+  container:
+    image: geopd/builder:drone
+    cpu: 8
+    memory: 32G
+  environment:
+    CIRRUS_WORKING_DIR: "/tmp/ci"
+    repo1: "ENCRYPTED[1f648a8885574b707824e80158af6138be9f121cbb99c48907f77315b623f5c71b4e2b5e1f6f9f5dad4c6f92fb11021a]"
+    repo2: "ENCRYPTED[3d504d4c28c6fd71979db1e654c5a307c1b4e1c413643442de04f79d78b8cadebcaedd7b9976d323785172a883a36ce7]"
+    bottoken: "ENCRYPTED[a9ce13c3a3a32cd0e0047e79244b7da9c8f007599b905744db59fd644f51673fc062e444396bdeb98c429215d860280d]"
+    chatid: "ENCRYPTED[53eef9fc3db78fad4ec4d7b2dc30b3609871389818b6bc0d12f612ee12bfdd5dad0992ba46d2b751b69f055efc0ce5df]"
+  compile_script:
+      - bash kernel_compile.sh
