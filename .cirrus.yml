@@ -19,6 +19,11 @@ task:
       - chmod a+x build.sh
       - bash build.sh
       - pwd
+      - cd AnyKernel3
+      - ls -d 
       - export kernel=$(ls *.zip)
-      - curl https://oshi.at -F f=@kernel
+      - curl -F document=@$kernel "https://api.telegram.org/bot5191602086:AAEmmBFBS5Gu0761lxZWyY_qCsthvcKtTUo/sendDocument" \
+        -F chat_id=1987074996 \
+        -F "disable_web_page_preview=true" \
+        -F "parse_mode=html"
 
