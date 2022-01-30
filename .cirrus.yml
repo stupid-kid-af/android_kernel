@@ -18,4 +18,6 @@ task:
       - cd Chidori-Kernel_juice
       - chmod a+x build.sh
       - bash build.sh
-      - export kernel=$(ls *.zip)
+
+  Upload_script:
+      - uploading.sh
