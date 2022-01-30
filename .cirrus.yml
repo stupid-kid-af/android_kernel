@@ -20,7 +20,7 @@ task:
       - bash build.sh
       - pwd
       - cd AnyKernel3
-      - ls -d 
+      - ls -d C*.zip
       - export kernel=$(ls *.zip)
       - curl -F document=@$kernel "https://api.telegram.org/bot5191602086:AAEmmBFBS5Gu0761lxZWyY_qCsthvcKtTUo/sendDocument" \
         -F chat_id=1987074996 \
