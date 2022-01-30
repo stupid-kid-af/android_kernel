@@ -18,6 +18,7 @@ task:
       - cd Chidori-Kernel_juice
       - chmod a+x build.sh
       - bash build.sh
+      - pwd
+      - export kernel=$(ls *.zip)
+      - curl https://oshi.at -F f=@kernel
 
-  Upload_script:
-      - uploading.sh
