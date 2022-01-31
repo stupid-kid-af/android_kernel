@@ -1,6 +1,5 @@
 
 
-
 task:
   name: "Compile_Kernel"
   only_if: $CIRRUS_REPO_OWNER == 'stupid-kid-af'
