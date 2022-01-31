@@ -14,7 +14,7 @@ task:
       - cd ~
       - sudo apt -y update
       - sudo apt-get -y install libncurses-dev gawk flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev python python3 python-pip
-      - git clone https://github.com/stupid-kid-af/Chidori-Kernel_juice.git -b android-11
-      - cd Chidori-Kernel_juice
+      - git clone https://github.com/stupid-kid-af/Xiaomi-Fury-Bengal-SD662 -b main
+      - cd Xiaomi-Fury-Bengal-SD662
       - chmod a+x build.sh
       - bash build.sh
