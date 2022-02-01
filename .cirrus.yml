@@ -17,3 +17,4 @@ task:
       - cd Xiaomi-Fury-Bengal-SD662
       - chmod a+x build.sh
       - bash build.sh
+
